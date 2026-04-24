@@ -1,59 +1,47 @@
-# ControleFinanceiro
+# 💰 Controle Financeiro Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+Sistema web desenvolvido com Angular para gerenciamento de receitas e despesas, com autenticação, persistência de dados e controle de saldo em tempo real.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Sobre o projeto
 
-```bash
-ng serve
-```
+Este projeto foi desenvolvido com o objetivo de simular um sistema financeiro real, permitindo ao usuário:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Gerenciar entradas e saídas financeiras
+- Visualizar saldo atualizado automaticamente
+- Controlar acesso com autenticação
+- Persistir dados no navegador
 
-## Code scaffolding
+👉 Focado em demonstrar boas práticas de desenvolvimento front-end com Angular moderno (standalone).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🚀 Funcionalidades
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+✅ Login com validação  
+✅ Proteção de rotas (AuthGuard)  
+✅ Cadastro de receitas e despesas  
+✅ Cálculo automático de saldo  
+✅ Persistência com localStorage  
+✅ Exclusão de transações  
+✅ Interface com feedback visual (cores por tipo)
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🛠️ Tecnologias utilizadas
 
-To build the project run:
+- Angular (Standalone)
+- TypeScript
+- SCSS
+- HTML5
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🎯 Demonstração
 
-## Running unit tests
+🔐 Login de teste:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+Email: admin@email.com
+Senha: 123456
