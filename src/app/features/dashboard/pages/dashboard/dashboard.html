@@ -1,4 +1,40 @@
-<h1>Dashboard</h1>
-<p>Bem-vinda ao sistema financeiro 👋</p>
+<div class="container">
 
-<button (click)="logout()">Sair</button>
+  <div class="card saldo">
+    <h2>Saldo</h2>
+    <p [ngClass]="getSaldo() >= 0 ? 'income' : 'expense'">
+      R$ {{ getSaldo() }}
+    </p>
+  </div>
+
+  <div class="card form">
+    <form (ngSubmit)="addTransaction()">
+      <input type="text" placeholder="Descrição" [(ngModel)]="description" name="description" required />
+      <input type="number" placeholder="Valor" [(ngModel)]="amount" name="amount" required />
+
+      <select [(ngModel)]="type" name="type">
+        <option value="income">Receita</option>
+        <option value="expense">Despesa</option>
+      </select>
+
+      <button type="submit">Adicionar</button>
+    </form>
+  </div>
+
+  <div class="card lista">
+    <ul>
+      <li *ngFor="let t of transactions" [ngClass]="t.type">
+        {{ t.description }} - R$ {{ t.amount }}
+      </li>
+    </ul>
+  </div>
+
+  <button (click)="logout()">Sair</button>
+
+  <li *ngFor="let t of transactions" [ngClass]="t.type">
+  {{ t.description }} - R$ {{ t.amount }}
+
+  <button (click)="removeTransaction(t.id)">❌</button>
+</li>
+
+</div>
